@@ -10,7 +10,8 @@ This site weaves science, sound, and civic imagination into a unified practice.
 - **Quantum Engineering**: Tunable artificial atoms for secure communication & high-fidelity processors  
 - **SonicFilter AI**: Vibration-assisted water filtration optimized via AI & Grassmann flows  
 - **Black Hole Archives**: Sonification of cosmic entropy, signal degradation, and archival loss  
-- **Bilingual Education**: Urdu/English modules on tech ethics, critical thinking, and silent revolutions  
+- **Bilingual Education**: Urdu/English modules on tech ethics, critical thinking, and silent revolutions
+- **AI Risk Radar**: Early-warning system for societal harms in AI deployments—prioritizing explainability, equity, and human dignity
 
 ## 🛠 Built With
 - Pure HTML, CSS, and JavaScript (no frameworks)
