@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Umair Abbas Siddiquie | Poet Scientist</title>
+  <meta name="description" content="Quantum engineering, data sonification, AI for water filtration, and bilingual education for humanity's silent revolutions." />
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --accent: #3498db;
+      --light: #ecf0f1;
+      --text: #333;
+      --border-radius: 8px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; }
+    body {
+      background-color: #fff;
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { width: 90%; max-width: 1200px; margin: 0 auto; padding: 2rem 0; }
+    header {
+      text-align: center;
+      padding: 2rem 0;
+      background: linear-gradient(135deg, #f9f9f9, #eef2f5);
+      border-bottom: 1px solid #eee;
+      position: relative;
+    }
+    .lang-toggle {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    h1 { font-size: 2.4rem; margin-bottom: 0.5rem; color: var(--primary); }
+    .subtitle { font-size: 1.2rem; color: #555; margin-bottom: 1.5rem; }
+    .tagline { font-size: 1.1rem; max-width: 700px; margin: 0 auto 2rem; }
+    
+    .pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 3rem 0; }
+    .pillar { 
+      background: var(--light); 
+      padding: 1.5rem; 
+      border-radius: var(--border-radius);       border-left: 4px solid var(--accent);
+    }
+    .pillar h3 { margin-bottom: 0.75rem; color: var(--primary); }
+    
+    .cta { text-align: center; margin: 3rem 0; }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      margin: 0 0.5rem;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: opacity 0.2s;
+    }
+    .btn:hover { opacity: 0.9; }
+    
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      color: #666;
+      font-size: 0.95rem;
+      border-top: 1px solid #eee;
+    }
+    .social-links a { margin: 0 0.5rem; color: var(--accent); text-decoration: none; }
+    .social-links a:hover { text-decoration: underline; }
+    
+    @media (max-width: 600px) {
+      .btn { display: block; margin: 0.5rem auto; width: 80%; }
+      h1 { font-size: 1.8rem; }
+      .lang-toggle { top: 0.8rem; right: 0.8rem; font-size: 0.9rem; padding: 0.3rem 0.7rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="lang-toggle" id="langToggle">EN / اردو</button>
+    <div class="container">
+      <h1 id="heroName">Umair Abbas Siddiquie</h1>
+      <div class="subtitle" id="heroTitle">Poet Scientist</div>
+      <p class="tagline" id="heroTagline">
+        I engineer quantum systems, sonify cosmic data, and build AI that listens—so water flows cleaner, knowledge spreads deeper, and silence speaks louder.
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="pillars" id="pillarsContainer">
+      <!-- Filled by JS -->    </div>
+
+    <div class="cta">
+      <a href="#research" class="btn" id="btnResearch">View Research</a>
+      <a href="https://youtube.com/@tunetalkacademy" class="btn" target="_blank" id="btnVideos">Watch Videos</a>
+      <a href="#contact" class="btn" id="btnContact">Contact</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p id="footerLocation">
+        Rooted in Dera Ghazi Khan, Pakistan. Committed to open-source, explainable AI, and the unity of humanity beyond borders.
+      </p>
+      <p id="footerAffiliations">
+        Affiliations: Universal Artic Solutions • Tune Talk Academy (Founder) • Independent Artist-Researcher
+      </p>
+      <div class="social-links">
+        <a href="https://orcid.org/0009-0008-3968-2252" target="_blank">ORCID</a> •
+        <a href="https://github.com/trizist" target="_blank">GitHub</a> •
+        <a href="https://youtube.com/@tunetalkacademy" target="_blank">YouTube</a> •
+        <a href="https://www.linkedin.com/in/umair-siddiquie" target="_blank">LinkedIn</a>
+      </div>
+      <p id="footerCopyright">© 2026 Umair Abbas Siddiquie | umair.siddiquie@gmail.com</p>
+    </div>
+  </footer>
+
+  <script>
+    const content = {
+      en: {
+        heroName: "Umair Abbas Siddiquie",
+        heroTitle: "Poet Scientist",
+        heroTagline: "I engineer quantum systems, sonify cosmic data, and build AI that listens—so water flows cleaner, knowledge spreads deeper, and silence speaks louder.",
+        pillars: [
+          { icon: "⚛️", title: "Quantum Engineering", desc: "Designing tunable artificial atoms for secure communication and high-fidelity quantum processors—pioneering the shift from quantum science to quantum engineering." },
+          { icon: "🌊", title: "SonicFilter AI", desc: "Real-world AI that optimizes vibration-assisted water filtration using controlled frequencies (e.g., 20.3 Hz) and Grassmann flow analytics." },
+          { icon: "🌌", title: "Black Hole Archives", desc: "Data sonification of cosmic entropy, signal degradation, and archival loss—turning astrophysical noise into meditative soundscapes." },
+          { icon: "📚", title: "Tune Talk Academy", desc: "Bilingual (Urdu/English) educational modules on tech ethics, scientific literacy, and silent revolutions in innovation." }
+        ],
+        btnResearch: "View Research",
+        btnVideos: "Watch Videos",
+        btnContact: "Contact",
+        footerLocation: "Rooted in Dera Ghazi Khan, Pakistan. Committed to open-source, explainable AI, and the unity of humanity beyond borders.",
+        footerAffiliations: "Affiliations: Universal Artic Solutions • Tune Talk Academy (Founder) • Independent Artist-Researcher",
+        footerCopyright: "© 2026 Umair Abbas Siddiquie | umair.siddiquie@gmail.com"
+      },
+      ur: {
+        heroName: "عمیر عباس صدیقی",
+        heroTitle: "شاعر سائنسدان",
+        heroTagline: "میں کوانٹم سسٹمز ڈیزائن کرتا ہوں، کائناتی ڈیٹا کو آواز دیتا ہوں، اور ایسا مصنوعی ذہن بناتا ہوں جو سنتا ہے—تاکہ پانی صاف بہے، علم گہرائی سے پھیلے، اور خاموشی زور سے بولے۔",        pillars: [
+          { icon: "⚛️", title: "کوانٹم انجینئرنگ", desc: "محفوظ مواصلات اور بلند معیار کوانٹم پروسیسرز کے لیے ٹیون ایبل مصنوعی ایٹمز ڈیزائن کرنا—کوانٹم سائنس سے کوانٹم انجینئرنگ کی طرف ایک انقلابی قدم۔" },
+          { icon: "🌊", title: "سونک فلٹر اے آئی", desc: "ایک عملی مصنوعی ذہن جو کنٹرول شدہ تعدد (مثلاً 20.3 ہرٹز) اور گراسمان فلو تجزیے کے ذریعے وائبریشن سے مدد یافتہ پانی کی فلٹریشن کو بہتر بناتا ہے۔" },
+          { icon: "🌌", title: "بلیک ہول آرکائیوز", desc: "کائناتی اینٹروپی، سگنل کی کمزوری، اور آرکائیو کے نقصان کی آواز—ستاروں کی گرج کو تفکر کا ذریعہ بنانا۔" },
+          { icon: "📚", title: "ٹیون ٹاک اکیڈمی", desc: "دو زبانی (اردو/انگریزی) تعلیمی ماڈیولز جو ٹیک اخلاقیات، سائنسی شعور، اور ٹیکنالوجی میں خاموش انقلابوں پر مشتمل ہیں۔" }
+        ],
+        btnResearch: "تحقیق دیکھیں",
+        btnVideos: "ویڈیوز دیکھیں",
+        btnContact: "رابطہ کریں",
+        footerLocation: "درہ غازی خان، پاکستان میں جڑے ہوئے۔ اوپن سورس، قابلِ تشریح مصنوعی ذہن، اور انسانیت کی وحدت کے لیے وقف۔",
+        footerAffiliations: "وابستگیاں: یونیورسل آرٹک سولوشنز • ٹیون ٹاک اکیڈمی (باني) • آزاد آرٹسٹ-ریسرچر",
+        footerCopyright: "© 2026 عمیر عباس صدیقی | umair.siddiquie@gmail.com"
+      }
+    };
+
+    let currentLang = 'en';
+    const langToggle = document.getElementById('langToggle');
+    const pillarContainer = document.getElementById('pillarsContainer');
+
+    function updateContent(lang) {
+      const c = content[lang];
+      document.getElementById('heroName').textContent = c.heroName;
+      document.getElementById('heroTitle').textContent = c.heroTitle;
+      document.getElementById('heroTagline').textContent = c.heroTagline;
+      document.getElementById('btnResearch').textContent = c.btnResearch;
+      document.getElementById('btnVideos').textContent = c.btnVideos;
+      document.getElementById('btnContact').textContent = c.btnContact;
+      document.getElementById('footerLocation').textContent = c.footerLocation;
+      document.getElementById('footerAffiliations').textContent = c.footerAffiliations;
+      document.getElementById('footerCopyright').textContent = c.footerCopyright;
+
+      // Update pillars
+      pillarContainer.innerHTML = '';
+      c.pillars.forEach(p => {
+        const div = document.createElement('div');
+        div.className = 'pillar';
+        div.innerHTML = `<h3>${p.icon} ${p.title}</h3><p>${p.desc}</p>`;
+        pillarContainer.appendChild(div);
+      });
+
+      currentLang = lang;
+      langToggle.textContent = lang === 'en' ? 'EN / اردو' : 'اردو / EN';
+    }
+
+    langToggle.addEventListener('click', () => {
+      const newLang = currentLang === 'en' ? 'ur' : 'en';
+      updateContent(newLang);
+    });
+
+    // Initialize    updateContent('en');
+  </script>
+</body>
+</html>
